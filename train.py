@@ -394,7 +394,7 @@ def main():
 
     args.start_epoch = 0
 
-    args.u_py = torch.ones(args.num_classes) / args.num_classes  # 初始化的先验
+    args.u_py = torch.ones(args.num_classes) / args.num_classes
     args.u_py = args.u_py.to(args.device)
 
     if args.resume:
