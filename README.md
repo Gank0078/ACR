@@ -41,12 +41,12 @@ For reversed:
 python train.py --dataset cifar10 --num-max 500 --num-max-u 4000 --arch wideresnet --batch-size 64 --lr 0.03 --seed 0 --imb-ratio-label 100 --imb-ratio-unlabel 100 --ema-u 0.99 --flag-reverse-LT 1 --out out/cifar-10/N500_M4000/reversed
 ```
 
-## Acknowledgement:
+## Acknowledgement
 Our code of ACR is based on the implementation of FixMatch. We thank the authors of the [FixMatch](https://github.com/kekmodel/FixMatch-pytorch) for making their code available to the public.
 
 
 
-## Citation:
+## Citation
 ```
 @inproceedings{weitowards,
   title={Towards Realistic Long-Tailed Semi-Supervised Learning: Consistency Is All You Need},
