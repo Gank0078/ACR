@@ -2,7 +2,7 @@
 
 This is PyTorch implementation of Towards Realistic Long-Tailed Semi-Supervised Learning: Consistency Is All You Need.
 
-<img src="assets/ACR-framework.png" width="90%" />
+<img src="assets/ACR-framework.png" />
 
 
 ## Requirements
@@ -16,9 +16,9 @@ This is PyTorch implementation of Towards Realistic Long-Tailed Semi-Supervised 
 
 ## Dataset
 
-The code will download data automatically with the dataloader. The directory structure looks like:
+The directory structure for datasets looks like:
 ```
-dataset
+datasets
 ├── cifar-10
 ├── cifar-100
 ├── stl-10
