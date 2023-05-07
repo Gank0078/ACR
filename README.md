@@ -7,9 +7,9 @@ While long-tailed semi-supervised learning (LTSSL) has received tremendous atten
 
 ## Method
 
-<!-- <p align = "center"> -->
-<img src="assets/ACR-framework.png" align="center" width="80%" />
-<!-- </p> -->
+<p align = "center">
+<img src="assets/ACR-framework.png" width="90%" />
+</p>
 
 ## Requirements
 
