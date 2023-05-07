@@ -316,7 +316,7 @@ def main():
         torch.distributed.barrier()
 
     labeled_dataset, unlabeled_dataset, test_dataset = DATASET_GETTERS[args.dataset](
-        args, '../datasets/'+args.dataset_name)
+        args, 'datasets/'+args.dataset_name)
 
     if args.local_rank == 0:
         torch.distributed.barrier()
