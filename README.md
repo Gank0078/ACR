@@ -1,7 +1,7 @@
 # [CVPR 2023] Towards Realistic Long-Tailed Semi-Supervised Learning: Consistency Is All You Need
 
 This is PyTorch implementation of Towards Realistic Long-Tailed Semi-Supervised Learning: Consistency Is All You Need.
-
+<img src="assets/ACR-framework.png" width="50%" />
 
 
 ## Requirements
