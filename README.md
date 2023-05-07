@@ -16,8 +16,15 @@ This is PyTorch implementation of Towards Realistic Long-Tailed Semi-Supervised 
 
 ## Dataset
 
-The code will download data automatically with the dataloader.  By default, the data is stored in the datasets folder under the same directory as ACR.
-
+The code will download data automatically with the dataloader. The directory structure looks like:
+```
+dataset
+├── cifar-10
+├── cifar-100
+├── stl-10
+├── imagenet32
+└── imagenet64
+```
 
 
 ## Usage
