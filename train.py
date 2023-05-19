@@ -622,14 +622,14 @@ def train(args, labeled_trainloader, unlabeled_trainloader, test_loader,
                     'state_dict': model_to_save.state_dict(),
                     'ema_state_dict': ema_to_save.state_dict() if args.use_ema else None,
                     'acc': test_acc,
-                    'best_acc': best_acc,
+                    'best_acc': best_acc_b,
                     'optimizer': optimizer.state_dict(),
                     'scheduler': scheduler.state_dict(),
                     'u_py': args.u_py,
                 }, is_best, args.out, epoch_p=epoch+1)
 
-            test_accs.append(test_acc)
-            logger.info('Best top-1 acc: {:.2f}'.format(best_acc))
+            test_accs.append(test_acc_b)
+            logger.info('Best top-1 acc: {:.2f}'.format(best_acc_b))
             logger.info('Mean top-1 acc: {:.2f}\n'.format(
                 np.mean(test_accs[-20:])))
 
@@ -671,8 +671,8 @@ def test(args, test_loader, model, epoch):
             batch_time.update(time.time() - end)
             end = time.time()
 
-    logger.info("top-1 acc: {:.2f}".format(top1.avg))
-    logger.info("top-5 acc: {:.2f}".format(top5.avg))
+    logger.info("top-1 acc: {:.2f}".format(top1_b.avg))
+    logger.info("top-5 acc: {:.2f}".format(top5_b.avg))
 
     return losses.avg, top1.avg, top5.avg, top1_b.avg, top5_b.avg
 
