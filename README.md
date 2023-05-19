@@ -63,11 +63,13 @@ Our code of ACR is based on the implementation of FixMatch. We thank the authors
 
 ## Citation
 ```
-@inproceedings{weitowards,
-  title={Towards Realistic Long-Tailed Semi-Supervised Learning: Consistency Is All You Need},
-  author={Wei, Tong and Gan, Kai},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  year={2023}
+@InProceedings{Wei_2023_CVPR,
+    author    = {Wei, Tong and Gan, Kai},
+    title     = {Towards Realistic Long-Tailed Semi-Supervised Learning: Consistency Is All You Need},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {3469-3478}
 }
 ```
 
